@@ -13,9 +13,11 @@ specifiers:
   '@types/supertest': ^2.0.11
   '@typescript-eslint/eslint-plugin': ^5.0.0
   '@typescript-eslint/parser': ^5.0.0
+  dayjs: ^1.11.8
   eslint: ^8.0.1
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
+  fs: 0.0.1-security
   jest: 29.3.1
   prettier: ^2.3.2
   reflect-metadata: ^0.1.13
@@ -32,6 +34,8 @@ dependencies:
   '@nestjs/common': 9.4.3_atc7tu2sld2m3nk4hmwkqn6qde
   '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
   '@nestjs/platform-express': 9.4.3_vw2vky2jc6gkm6gj7lzrgmojyi
+  dayjs: 1.11.8
+  fs: 0.0.1-security
   reflect-metadata: 0.1.13
   rxjs: 7.8.1
 
@@ -2064,6 +2068,10 @@ packages:
       which: 2.0.2
     dev: true
 
+  /dayjs/1.11.8:
+    resolution: {integrity: sha512-LcgxzFoWMEPO7ggRv1Y2N31hUf2R0Vj7fuy/m+Bg1K8rr+KAs1AEy4y9jd5DXe8pbHgX+srkHNS7TH6Q6ZhYeQ==}
+    dev: false
+
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
     peerDependencies:
@@ -2632,6 +2640,10 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
+
+  /fs/0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
+    dev: false
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
