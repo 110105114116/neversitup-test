@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, Request } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put, Request } from '@nestjs/common';
 import { OrderService } from './order.service';
 
 @Controller()
@@ -13,14 +13,14 @@ export class OrderController {
     return this.orderService.createOrder(userId, productId);
   }
 
-  @Post('order/cancel/:id')
+  @Put('order/cancel/:id')
   cancelOrder(
     @Request() req,
   ) {
     return this.orderService.cancelOrder(req.params.id);
   }
 
-  @Get('order')
+  @Get('orders')
   getOrders() {
     return this.orderService.getOrders();
   }

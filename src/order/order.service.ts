@@ -28,7 +28,7 @@ export class OrderService {
     return orderDetail;
   }
 
-  cancelOrder(id: number): string {
+  cancelOrder(id: number) {
     const order = orders.find((order) => order.id == id);
     if (!order) return 'Order not found';
 
@@ -37,7 +37,10 @@ export class OrderService {
 
     fs.writeFileSync('./src/order/order.json', JSON.stringify(orders));
 
-    return `Order with id ${id} has been canceled`;
+    return {
+      message: 'Order canceled successfully',
+      order
+    };
   }
 
   getOrders() {

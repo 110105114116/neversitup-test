@@ -42,6 +42,9 @@ export class AuthService {
     if (!user) return 'User not found';
     if (user.password !== password) return 'Wrong password';
 
-    return user;
+    return {
+      message: `Login success`,
+      user
+    }
   }
 }

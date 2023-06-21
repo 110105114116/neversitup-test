@@ -5,14 +5,14 @@ import { UsersService } from './users.service';
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
-  @Get('users/profile/:id')
+  @Get('user/profile/:id')
   register(
     @Request() req
   ) {
     return this.usersService.getProfile(req.params.id);
   }
 
-  @Get('users/order/:id')
+  @Get('user/order/:id')
   getOrder(
     @Request() req
   ) {
